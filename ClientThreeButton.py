@@ -9,12 +9,6 @@ from RtpPacket import RtpPacket
 CACHE_FILE_NAME = "cache-"
 CACHE_FILE_EXT = ".jpg"
 
-# Group 16
-# CS 4390
-# Julian McNichols
-# Israel Quiroz
-# Andrew Chen
-
 class ClientThreeButton:
 	INIT = 0
 	READY = 1
