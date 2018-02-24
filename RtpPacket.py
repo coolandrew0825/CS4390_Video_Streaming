@@ -12,9 +12,6 @@ class RtpPacket:
 		"""Encode the RTP packet with header fields and payload."""
 		timestamp = int(time())
 		header = bytearray(HEADER_SIZE)
-		#--------------
-		# TO COMPLETE
-		#--------------
 		# Fill the header bytearray with RTP header fields
 		
 		#Shift bits in arguments to desired position, then use bitmaks to isolate only those bits
