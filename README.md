@@ -17,7 +17,7 @@ How to run the files:
 12)	Click the teardown button when the video finishes running
 
 Instructions on installing PIL imaging library
-1)	Ddownload the Python Imaging Library
+1)	Download the Python Imaging Library
 2)	Install PIL to Python 2.7
 3)	Open System Menu
   I)	Go to Start Menu
