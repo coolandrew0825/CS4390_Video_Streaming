@@ -173,7 +173,7 @@ class ClientThreeButton:
 			# Update RTSP sequence number.
 			self.rtspSeq += 1
 			
-			# Write the RTSP request to be sent.
+			# RTSP request
 			request = "SETUP " + self.fileName + " RTSP/1.0\n"
 			request += "CSeq: " + str(self.rtspSeq) + "\n"
 			request += "Transport: " + "RTP/UDP; client_port= " + str(self.rtpPort)
@@ -186,7 +186,7 @@ class ClientThreeButton:
 			# Update RTSP sequence number.
 			self.rtspSeq += 1
 			
-			# Write the RTSP request to be sent.
+			# RTSP request
 			request = "PLAY " + self.fileName + " RTSP/1.0\n"
 			request += "CSeq: " + str(self.rtspSeq) + "\n"
 			request += "Session: " + str(self.sessionId)
@@ -199,7 +199,7 @@ class ClientThreeButton:
 			# Update RTSP sequence number.
 			self.rtspSeq += 1
 			
-			# Write the RTSP request to be sent.
+			# RTSP request
 			request = "PAUSE " + self.fileName + " RTSP/1.0\n"
 			request += "Cseq: " + str(self.rtspSeq) + "\n"
 			request += "Session: " + str(self.sessionId)
@@ -210,10 +210,9 @@ class ClientThreeButton:
 		# Teardown request
 		elif requestCode == self.TEARDOWN and not self.state == self.INIT:
 			# Update RTSP sequence number.
-			# ...
 			self.rtspSeq += 1
 			
-			# Write the RTSP request to be sent.
+			# RTSP request
 			request = "TEARDOWN " + self.fileName + " RTSP/1.0\n"
 			request += "Cseq: " + str(self.rtspSeq) + "\n"
 			request += "Session: " + str(self.sessionId)
